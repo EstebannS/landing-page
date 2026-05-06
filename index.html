@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EstebanS — Desarrollador Web</title>
+  <meta name="description" content="Desarrollador web fullstack apasionado por construir productos digitales elegantes y funcionales." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <span class="nav__logo-bracket">{</span>
+      <span class="nav__logo-name">EstebanS</span>
+      <span class="nav__logo-bracket">}</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about" class="mobile-link">Sobre mí</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Proyectos</a></li>
+      <li><a href="#contact" class="mobile-link">Contacto</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+      <div class="hero__grid"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        Disponible para trabajar
+      </div>
+      <h1 class="hero__title">
+        Hola, soy<br />
+        <em class="hero__name">EstebanS</em>
+      </h1>
+      <p class="hero__subtitle">
+        Desarrollador web fullstack que convierte ideas<br class="hide-mobile" />
+        en productos digitales que la gente ama usar.
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">Ver mis proyectos</a>
+        <a href="#contact" class="btn btn--ghost">Hablemos →</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-target="12">0</span>
+          <span class="hero__stat-label">Proyectos</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-target="6">0</span>
+          <span class="hero__stat-label">Tecnologías</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-target="1">0</span>
+          <span class="hero__stat-label">Año de práctica</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__image-wrap">
+          <img src="img/yo.png" alt="Foto de Esteban" class="about__image" />
+        </div>
+        <div class="about__text">
+          <span class="section__tag">Sobre mí</span>
+          <h2 class="section__title">Construyo desde cero.<br /><em>Aprendo sin parar.</em></h2>
+          <p class="about__body">
+            Soy un desarrollador web en formación con un objetivo claro: construir productos 
+            reales que resuelvan problemas reales. En este momento estoy terminando mi roadmap 
+            de 12 meses cubriendo fundamentos, React, Node.js y despliegue en producción.
+          </p>
+          <p class="about__body">
+            Me apasiona el detalle — tanto en el código como en la interfaz. Creo que el 
+            software bien hecho importa, y por eso cada proyecto que construyo lo trato como 
+            si fuera para un cliente real.
+          </p>
+          <a href="docs/CV.pdf" class="btn btn--primary" download>Descargar CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Tecnologías</span>
+        <h2 class="section__title">Mi stack actual</h2>
+      </div>
+      <div class="skills__grid">
+        <div class="skill-card">
+          <div class="skill-card__icon">🌐</div>
+          <h3 class="skill-card__name">HTML & CSS</h3>
+          <p class="skill-card__desc">Semántica, accesibilidad, Flexbox, Grid, animaciones.</p>
+          <div class="skill-card__bar"><div class="skill-card__fill" style="--pct: 85%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">⚡</div>
+          <h3 class="skill-card__name">JavaScript</h3>
+          <p class="skill-card__desc">ES6+, DOM, Fetch API, async/await, módulos.</p>
+          <div class="skill-card__bar"><div class="skill-card__fill" style="--pct: 75%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">⚛️</div>
+          <h3 class="skill-card__name">React</h3>
+          <p class="skill-card__desc">Hooks, Context API, React Router, componentes.</p>
+          <div class="skill-card__bar"><div class="skill-card__fill" style="--pct: 65%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">🟦</div>
+          <h3 class="skill-card__name">TypeScript</h3>
+          <p class="skill-card__desc">Tipos, interfaces, generics, config strict.</p>
+          <div class="skill-card__bar"><div class="skill-card__fill" style="--pct: 55%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">🟢</div>
+          <h3 class="skill-card__name">Node.js</h3>
+          <p class="skill-card__desc">Express, REST APIs, JWT, PostgreSQL.</p>
+          <div class="skill-card__bar"><div class="skill-card__fill" style="--pct: 50%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">🐙</div>
+          <h3 class="skill-card__name">Git & GitHub</h3>
+          <p class="skill-card__desc">Branches, PRs, GitHub Actions, Pages.</p>
+          <div class="skill-card__bar"><div class="skill-card__fill" style="--pct: 70%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Portafolio</span>
+        <h2 class="section__title">Lo que he construido</h2>
+      </div>
+      <div class="projects__grid">
+
+        <article class="project-card project-card--featured">
+          <div class="project-card__meta">
+            <span class="project-card__tag">Destacado</span>
+            <span class="project-card__num">01</span>
+          </div>
+          <h3 class="project-card__title">Angular-CRUD</h3>
+          <p class="project-card__desc">
+            SPA con gestión de estado centralizada y carga perezosa. Construido como
+            assessment técnico usando Angular, TypeScript y NgRx.
+          </p>
+          <div class="project-card__tech">
+            <span>Angular</span><span>TypeScript</span><span>NgRx</span><span>SPA</span>
+          </div>
+          <div class="project-card__links">
+            <a href="#" class="project-card__link">Ver demo →</a>
+            <a href="https://github.com/EstebannS/Angular-CRUD" class="project-card__link project-card__link--ghost">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__meta">
+            <span class="project-card__num">02</span>
+          </div>
+          <h3 class="project-card__title">Flight Reservation System</h3>
+          <p class="project-card__desc">
+            Sistema de reserva de vuelos con lógica de booking y una interfaz dinámica.
+            Desarrollado con JavaScript puro para una experiencia fluida.
+          </p>
+          <div class="project-card__tech">
+            <span>JavaScript</span><span>UI Dinámica</span><span>Booking</span>
+          </div>
+          <div class="project-card__links">
+            <a href="#" class="project-card__link">Ver demo →</a>
+            <a href="https://github.com/EstebannS/flight-reservation-system" class="project-card__link project-card__link--ghost">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__meta">
+            <span class="project-card__num">03</span>
+          </div>
+          <h3 class="project-card__title">prestamosFUCS</h3>
+          <p class="project-card__desc">
+            API REST en PHP y Laravel para gestión de préstamos de equipos en una universidad.
+            Incluye autenticación, control de inventario y operaciones CRUD.
+          </p>
+          <div class="project-card__tech">
+            <span>PHP</span><span>Laravel</span><span>MySQL</span><span>REST API</span>
+          </div>
+          <div class="project-card__links">
+            <a href="#" class="project-card__link">Ver demo →</a>
+            <a href="https://github.com/EstebannS/prestamosFUCS" class="project-card__link project-card__link--ghost">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__meta">
+            <span class="project-card__num">04</span>
+          </div>
+          <h3 class="project-card__title">Vivento App</h3>
+          <p class="project-card__desc">
+            App móvil full-stack con autenticación y CRUD. Frontend en React Native y backend en
+            PHP con MySQL para gestión de datos y usuarios.
+          </p>
+          <div class="project-card__tech">
+            <span>React Native</span><span>PHP</span><span>MySQL</span><span>Full-stack</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://vivento.tech/" class="project-card__link" target="_blank" rel="noopener">Ver demo →</a>
+            <a href="https://github.com/EstebannS" class="project-card__link project-card__link--ghost">GitHub</a>
+          </div>
+        </article>
+
+      </div>
+      <div class="projects__more">
+        <a href="https://github.com/EstebannS" class="btn btn--ghost">Ver todos en GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <span class="section__tag">Contacto</span>
+        <h2 class="section__title">¿Tienes un proyecto?<br /><em>Hablemos.</em></h2>
+        <p class="contact__sub">
+          Estoy buscando mi primera oportunidad profesional. Si tienes un equipo donde 
+          crecer y aportar, me gustaría conocerlo.
+        </p>
+        <form class="contact__form" id="contact-form" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+              <span class="form__error" id="name-error"></span>
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="estebannsalazar@gmail.com" required />
+              <span class="form__error" id="email-error"></span>
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            <span class="form__error" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
+          <div class="form__success" id="form-success">
+            ✅ Mensaje enviado. Te respondo pronto.
+          </div>
+        </form>
+        <div class="contact__socials">
+          <a href="https://github.com/EstebannS" target="_blank" rel="noopener">GitHub</a>
+          <span>·</span>
+          <a href="https://www.linkedin.com/in/esteban-felipe-salazar-pe%C3%B1a-a3273b205/" target="_blank" rel="noopener">LinkedIn</a>
+          <span>·</span>
+          <a href="mailto:estebannsalazar@gmail.com">estebannsalazar@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>Diseñado y construido por <strong>Tu Nombre</strong> · 2025</p>
+      <p class="footer__sub">Hecho con HTML, CSS y muchas ganas de aprender.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
